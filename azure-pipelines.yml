@@ -94,9 +94,9 @@ jobs:
     PREMAKE5: $(System.DefaultWorkingDirectory)/dependencies/macosx/premake-core/premake5
     PROJECT_OS: macosx
     PREMAKE5_URL: https://github.com/premake/premake-core/releases/download/v5.0.0-beta2/premake-5.0.0-beta2-macosx.tar.gz
-    MACOSX_SDK_URL: https://github.com/phracker/MacOSX-SDKs/releases/download/10.15/MacOSX10.7.sdk.tar.xz
-    MACOSX_SDK_DIRECTORY: $(System.DefaultWorkingDirectory)/dependencies/macosx/MacOSX10.7.sdk
-    SDKROOT: $(System.DefaultWorkingDirectory)/dependencies/macosx/MacOSX10.7.sdk
+    MACOSX_SDK_URL: https://github.com/phracker/MacOSX-SDKs/releases/download/11.3/MacOSX11.3.sdk.tar.xz
+    MACOSX_SDK_DIRECTORY: $(System.DefaultWorkingDirectory)/dependencies/macosx/MacOSX11.3.sdk
+    SDKROOT: $(System.DefaultWorkingDirectory)/dependencies/macosx/MacOSX11.3.sdk
   steps:
   - bash: 'curl -s -L "$BOOTSTRAP_URL" | bash'
     displayName: Bootstrap
